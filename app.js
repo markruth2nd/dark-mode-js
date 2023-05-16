@@ -22,7 +22,7 @@ darkMode.addEventListener('click', () => {
         targets: ".sun", /* This is grabing my class of sun like queryselector works */
 
         /* Below I will create an array of objects. All these objects are my data points  */
-        d: [{value: moonPath}]
+        d: [{value: toggle ? sunPath : moonPath}]
     })
     .add({
         targets: '#darkMode',
@@ -32,7 +32,8 @@ darkMode.addEventListener('click', () => {
     /* The below will grab the section tag in the html and adjust  the background color */
     .add({
         targets: "section",
-        backgroundColor: 'rgb(22,22,22)'
+        backgroundColor: toggle ? 'rgb(255,255,255)' : 'rgb(22,22,22)',
+        color: toggle ? "rgb(22,22,22)" : "rgb(255,255,255)"
     }, '-= 700');
 
     /* Now I need to be able to switch back to light mode, to help me do this I will use an if/esle statement instead of a reverse function */
@@ -41,5 +42,9 @@ darkMode.addEventListener('click', () => {
         toggle = true;
     }else{
         toggle = false;
-    }
+    } /* Now I can add the turnerary operator to the animation code above ( toggle   ? + : ) ... so ... value: toggle ? sunPath : moonPath
+    &
+    backgroundColor: toggle ? 'rgb(255,255,255)' : 'rgb(22,22,22)'
+    &
+    */
 });
