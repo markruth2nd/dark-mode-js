@@ -21,6 +21,6 @@ Instead of NPM installing animeJS, I simply downloaded the anime.min.js file fro
 
 ## Screenshots
 Lightmode prior to click and animation
-![Lightmode ](./images/Lightmode_before_click.png)
+![Lightmode ](/images/Lightmode_before_click.png)
 Darkmode after click and animation
-![Darkmode ](./images/Darkmore_after_click.png)
+![Darkmode ](/images/Darkmore_after_click.png)
