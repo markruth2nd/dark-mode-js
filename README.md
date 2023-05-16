@@ -20,5 +20,7 @@ When the page first loads, the back ground will be grey and the tile advising Da
 Instead of NPM installing animeJS, I simply downloaded the anime.min.js file from the link provided in Github(https://github.com/juliangarnier/anime/) and pasted the file into myproject. This is so that I did note need to add package.json files as well as a node modules folder.
 
 ## Screenshots
+Lightmode prior to click and animation
 ![Lightmode ](./images/Lightmode_before_click.png)
+Darkmode after click and animation
 ![Darkmode ](./images/Darkmore_after_click.png)
